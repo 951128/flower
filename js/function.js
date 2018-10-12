@@ -45,10 +45,12 @@ function banner_oi (circle,bannerimg,banner,rbtn,lbtn,hot,time,boole) {
 		//其余图片opacity变为0  清除轮播点hot类名
 		for (let j = 0; j < bannerimg.length; j++) {
 			bannerimg[j].style.opacity = 0;
-			circle[j].classList.remove("hot");	
+			circle[j].classList.remove("hot");
+			bannerP[j].classList.remove("animated","fadeInUp");
 		}
 		//对应的图片opacity变为1
 		bannerimg[num].style.opacity = 1;
+		bannerP[num].classList.add("animated","fadeInUp");
 		//当前轮播点添加hot类名
 		circle[num].classList.add("hot");		
 	}
@@ -77,9 +79,11 @@ function banner_oi (circle,bannerimg,banner,rbtn,lbtn,hot,time,boole) {
 		for (let j = 0; j < bannerimg.length; j++) {
 			bannerimg[j].style.opacity = 0;
 			circle[j].classList.remove("hot");	
+			bannerP[j].classList.remove("animated","fadeInUp");
 		}
 		//对应的图片opacity变为1
 		bannerimg[num].style.opacity = 1;
+		bannerP[num].classList.add("animated","fadeInUp");
 		//当前轮播点添加hot类名
 		circle[num].classList.add("hot");	
 	}

@@ -6,49 +6,50 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" href="css/swiper-4.4.1.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_800820_beulbcpk736.css">
+	<link rel="stylesheet" href="css/animate.css" />
 </head>
 <style type="text/css">
-	.swiper-container {
-	  width: 1020px;
-		height: 604px;
-		margin:0 auto;
-		/*padding: 0 15px;*/
-	}  
-	.swiper-wrapper {
-		width: 1020px;
-		height: 476px;
-		/*padding: 0 60px;*/
-		margin-top: 50px;
-		position: relative;
-	}
-	.swiper-slide {
-		display: inline-block;
-		width: 900px;
-		height: 454px;
-		/*float: left;*/
-		text-align: center;
-		font-size: 18px;
-		background: #fff;
-		
-		/* Center slide text vertically */
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		-webkit-justify-content: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		-webkit-align-items: center;
-		align-items: center;
-	}
-	.swiper-container {
+.swiper-container {
+    width: 1020px;
+	height: 604px;
+	margin:0 auto;
+	/*padding: 0 15px;*/
+}  
+.swiper-wrapper {
+	width: 1020px;
+	height: 476px;
+	/*padding: 0 60px;*/
+	margin-top: 50px;
+	position: relative;
+}
+.swiper-slide {
+	display: inline-block;
+	width: 900px;
+	height: 454px;
+	/*float: left;*/
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.swiper-container {
 	width: 1020px;
 	height: 604px;
 	/*margin:0 auto;*/
-	/*padding: 0 15px;*/
+	padding: 0 30px;
 }
 .swiper-container .text {
 	width: 1140px;
@@ -89,6 +90,7 @@
 	/*padding: 0 60px;*/
 	margin-top: 50px;
 	position: relative;
+	
 }
 .swiper-wrapper .swiper-slide {
 	display: inline-block;
@@ -141,6 +143,50 @@
 	width: 100%;
 	height: 100%;
 	background: rgba(255,255,255,0.1);
+}
+.swiper-button-prev , .swiper-button-next {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background: #C8CFD4;
+	color: red;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-bottom: auto;
+	margin-top: auto;
+	/*left: 15px;*/
+	font-size: 15px;
+	text-align: center;
+	line-height: 30px;
+}
+.swiper-button-next {
+	/*left: 0;*/
+	right: 0;
+}
+.swiper-button-prev {
+	left: 0;
+	/*right: 0;*/
+}
+.swiper-button-next:hover {
+	background: #B5BFC5;
+	color: #fff;
+}
+.swiper-button-prev:hover {
+	background: #B5BFC5;
+	color: #fff;
+}
+.huayu-box li:first-child {
+	animation-delay: .1s;
+	animation-duration: 1s;
+}
+.huayu-box li:nth-child(2) {
+	animation-delay: .3s;
+	animation-duration: 1s;
+}
+.huayu-box li:nth-child(3) {
+	animation-delay: .3s;
+	animation-duration: 1s;
 }
 </style>
 <body>
@@ -201,7 +247,7 @@
 <!-- banner结束 -->
 
 <!-- 素馨花艺开始 -->
-	<div class="huayi-box">
+	<div class="huayi-box settop">
 		<div class="huayi">
 			<div class="text">
 				素馨花艺
@@ -212,7 +258,7 @@
 			<p>花艺师与您一同分享素馨花卉给您的生活带去的花香世界。</p>
 			<div class="huayi-list">
 				<div class="list">
-					<img src="img/huayi-list1.jpg">
+					<img srcimg="img/huayi-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif">
 					<h4>小彩瓷随心插</h4>
 					<p>小彩瓷随意搭配小菊、康乃馨，即便不需要专业的花艺师，也能做出清新脱俗的感觉。</p>
 					<a href="">
@@ -222,7 +268,7 @@
 					</a>
 				</div>
 				<div class="list">
-					<img src="img/huayi-list2.jpg">
+					<img srcimg="img/huayi-list2.jpg" src="img/0172dd57ac15350000012e7e32747e.gif">
 					<h4>插花花篮</h4>
 					<p>香槟玫瑰、红玫瑰配以红豆，几支康乃馨和黄莺，以手工编织花篮装饰，清新脱俗。</p>
 					<a href="">
@@ -232,7 +278,7 @@
 					</a>
 				</div>
 				<div id="onelist" class="list">
-					<img src="img/huayi-list3.jpg">
+					<img srcimg="img/huayi-list3.jpg" src="img/0172dd57ac15350000012e7e32747e.gif">
 					<h4>桌花瓶插花</h4>
 					<p>这些争鲜斗艳的花朵如冬日深夜火焰般温暖，浓烈。火红色多头玫瑰、香槟色郁金香与紫罗兰碰撞穿插，浓缩成精..</p>
 					<a href="">
@@ -249,14 +295,26 @@
 <!-- 素馨花艺结束 -->
 
 <!-- 素馨花语开始 -->
-	<div class="huayu-box">
+	<div class="huayu-box settop">
 		<div class="huayu">
 			<div class="text">
 				素馨花语<a href="hyhy.html">More</a>
 			</div>
 			<ul>
 				<li>
-					<a href="hyhy.html" class="img-box"><img src="./img/huayu-list1.jpg" title="多肉入新家"></a>
+					<a href="hyhy.html" class="img-box"><img srcimg="./img/huayu-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif" title="多肉入新家"></a>
+					<div class="text-body">
+						<a href="hyhy.html">多肉入新家</a>
+						<p>多肉必须经过一段时间适应期，也就是安全度过缓苗期，就说明她入盆成功，真正进入新家了。首先我们需要晾根，然后我们需要</p>
+						<p>
+							<span>2018-07-15</span>
+							<span>王亚楠</span>
+							<span><i class="iconfont icon-ai-eye"></i>112</span>
+						</p>
+					</div>
+				</li>
+				<li class="animated fadeInRight">
+					<a href="hyhy.html" class="img-box"><img srcimg="img/huayu-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif" title="多肉入新家"></a>
 					<div class="text-body">
 						<a href="hyhy.html">多肉入新家</a>
 						<p>多肉必须经过一段时间适应期，也就是安全度过缓苗期，就说明她入盆成功，真正进入新家了。首先我们需要晾根，然后我们需要</p>
@@ -268,7 +326,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="hyhy.html" class="img-box"><img src="./img/huayu-list1.jpg" title="多肉入新家"></a>
+					<a href="hyhy.html" class="img-box"><img srcimg="img/huayu-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif" title="多肉入新家"></a>
 					<div class="text-body">
 						<a href="hyhy.html">多肉入新家</a>
 						<p>多肉必须经过一段时间适应期，也就是安全度过缓苗期，就说明她入盆成功，真正进入新家了。首先我们需要晾根，然后我们需要</p>
@@ -280,7 +338,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="hyhy.html" class="img-box"><img src="./img/huayu-list1.jpg" title="多肉入新家"></a>
+					<a href="hyhy.html" class="img-box"><img srcimg="./img/huayu-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif" title="多肉入新家"></a>
 					<div class="text-body">
 						<a href="hyhy.html">多肉入新家</a>
 						<p>多肉必须经过一段时间适应期，也就是安全度过缓苗期，就说明她入盆成功，真正进入新家了。首先我们需要晾根，然后我们需要</p>
@@ -292,7 +350,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="hyhy.html" class="img-box"><img src="./img/huayu-list1.jpg" title="多肉入新家"></a>
+					<a href="hyhy.html" class="img-box"><img srcimg="./img/huayu-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif" title="多肉入新家"></a>
 					<div class="text-body">
 						<a href="hyhy.html">多肉入新家</a>
 						<p>多肉必须经过一段时间适应期，也就是安全度过缓苗期，就说明她入盆成功，真正进入新家了。首先我们需要晾根，然后我们需要</p>
@@ -304,7 +362,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="hyhy.html" class="img-box"><img src="./img/huayu-list1.jpg" title="多肉入新家"></a>
+					<a href="hyhy.html" class="img-box"><img srcimg="./img/huayu-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif" title="多肉入新家"></a>
 					<div class="text-body">
 						<a href="hyhy.html">多肉入新家</a>
 						<p>多肉必须经过一段时间适应期，也就是安全度过缓苗期，就说明她入盆成功，真正进入新家了。首先我们需要晾根，然后我们需要</p>
@@ -316,7 +374,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="hyhy.html" class="img-box"><img src="./img/huayu-list1.jpg" title="多肉入新家"></a>
+					<a href="hyhy.html" class="img-box"><img srcimg="./img/huayu-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif" title="多肉入新家"></a>
 					<div class="text-body">
 						<a href="hyhy.html">多肉入新家</a>
 						<p>多肉必须经过一段时间适应期，也就是安全度过缓苗期，就说明她入盆成功，真正进入新家了。首先我们需要晾根，然后我们需要</p>
@@ -328,19 +386,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="hyhy.html" class="img-box"><img src="./img/huayu-list1.jpg" title="多肉入新家"></a>
-					<div class="text-body">
-						<a href="hyhy.html">多肉入新家</a>
-						<p>多肉必须经过一段时间适应期，也就是安全度过缓苗期，就说明她入盆成功，真正进入新家了。首先我们需要晾根，然后我们需要</p>
-						<p>
-							<span>2018-07-15</span>
-							<span>王亚楠</span>
-							<span><i class="iconfont icon-ai-eye"></i>112</span>
-						</p>
-					</div>
-				</li>
-				<li>
-					<a href="hyhy.html" class="img-box"><img src="./img/huayu-list1.jpg" title="多肉入新家"></a>
+					<a href="hyhy.html" class="img-box"><img srcimg="./img/huayu-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif" title="多肉入新家"></a>
 					<div class="text-body">
 						<a href="hyhy.html">多肉入新家</a>
 						<p>多肉必须经过一段时间适应期，也就是安全度过缓苗期，就说明她入盆成功，真正进入新家了。首先我们需要晾根，然后我们需要</p>
@@ -410,9 +456,9 @@
 				More
 			</a>
 		</div>
-	    <div class="swiper-wrapper">
+	    <div class="swiper-wrapper" >
 	        <div class="swiper-slide" sytel="900px">
-	        	<img src="img/huayi-list1.jpg">
+	        	<img srcimg="img/huayi-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif">
 				<h4>小彩瓷随心插</h4>
 				<p>小彩瓷随意搭配小菊、康乃馨，即便不需要专业的花艺师，也能做出清新脱俗的感觉。</p>
 				<a href="">
@@ -484,8 +530,8 @@
 	    <!--<div class="swiper-pagination"></div>-->
 	    
 	    <!-- 如果需要导航按钮 -->
-	    <div class="swiper-button-prev"></div>
-	    <div class="swiper-button-next"></div>
+	    <div class="swiper-button-prev"><i class="iconfont icon-zuojiantou"></i></div>
+	    <div class="swiper-button-next"><i class="iconfont icon-youjiantou"></i></div>
 	    
 	    <!-- 如果需要滚动条 -->
 	    <!--<div class="swiper-scrollbar"></div>-->
@@ -498,6 +544,14 @@
 <script src="js/function.js"></script>
 <script src="js/swiper-4.4.1.min.js"></script>
 <script>
+	
+//按需加载
+	let settop = document.querySelectorAll(".settop");
+	let lis = document.querySelectorAll(".huayu-box li");
+	let arr = [];
+	settop.forEach((val,index) => {
+		arr.push(val.offsetTop);
+	})
 //nav
 	window.onscroll = function () {
 		let nav = document.querySelector(".nav-box");
@@ -515,21 +569,47 @@
 				nav_a[i].style.color = "#fff";
 			}
 			nav_a[0].style.color = "#16b0dc";	
-		}	
+		}
+		
+//按需加载
+		arr.forEach((val,index) => {
+			//当滚动条的距离>每个楼层的offsettop时,让对应楼层的图片出现
+			if (bodytop >= val) {
+				console.log(index);
+				if (index == 1) {
+					lis[0].classList.add("animated","fadeInLeft"); 
+					lis[2].classList.add("animated","fadeInLeft");
+				}
+				
+				//获取每一楼层中对应的所有图片
+				let imgs = settop[index].querySelectorAll(".settop img");
+				//得到每一张图片的imgSRC属性值
+				imgs.forEach((vals) => {
+					//vals每一张图片
+					let url = vals.getAttribute("srcimg");	
+					vals.setAttribute("src",url);
+				})
+
+			}
+		})
+
+
 //返顶	
 		let ftop = document.querySelector(".button");		
 		if (bodytop > 700) {
 			ftop.style.bottom = "10px";
+			ftop.style.opacity = 1;
 		}
 		if (bodytop <= 700) {
 			ftop.style.bottom = "-36px";
+			ftop.style.opacity = 0;
 		}
 		ftop.onclick = function () {
 			animate(document.body,{scrollTop:0});
 			animate(document.documentElement,{scrollTop:0});
-		}
-		
+		}		
 	}	
+	
 	
 //轮播
 	let circle = document.querySelectorAll(".btn-bottom .btn");
@@ -537,15 +617,27 @@
 	let banner = document.querySelector(".banner-box");
 	let rbtn = document.querySelector(".banner-box .btnR");
 	let lbtn = document.querySelector(".banner-box .btnL");
-	
+	let bannerP = document.querySelectorAll(".banner p");
 	banner_oi(circle,bannerimg,banner,rbtn,lbtn,"hot",2000,0);
 	
+//	let bannerOption = document.querySelectorAll(".banner");
+//	
+//			console.log(getComputedStyle(bannerOption[1],null).opacity);
+//	
+//	bannerOption.forEach((val,index) => {
+//
+//		if (getComputedStyle(bannerOption[1],null).opacity == 1) {
+//
+//			bannerP[1].classList.add("animated","fadeInLeft");
+//		}
+//	})
 	
 	
-
+//花艺轮播
 	var appendNumber = 6;
-    var prependNumber = 0;
+    var prependNumber = 1;
     var swiper = new Swiper('.swiper-container', {
+    	autoplay:true,
 		slidesPerView: 3,
 	    centeredSlides: true,
 	    spaceBetween: 30,
@@ -561,8 +653,8 @@
     document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
 	    e.preventDefault();
 	    swiper.prependSlide([
-	      '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
-	      '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
+	        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>',
+	        '<div class="swiper-slide">Slide ' + (--prependNumber) + '</div>'
 	    ]);
     });
     document.querySelector('.prepend-slide').addEventListener('click', function (e) {
@@ -576,8 +668,8 @@
     document.querySelector('.append-2-slides').addEventListener('click', function (e) {
         e.preventDefault();
         swiper.appendSlide([
-           '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
-           '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
+            '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>',
+            '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
         ]);
     });
 	
