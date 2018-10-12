@@ -325,6 +325,7 @@ input[type="text"]:focus{
 	background-color: #62a8ea;
 	text-align: center;
 	line-height: 36px;
+	transition: all .5s;
 }
 .button i {
 	font-size: 16px;

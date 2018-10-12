@@ -95,3 +95,42 @@
 <!-- 底部结束 -->
 </body>
 </html>
+<script src="js/animate.js" type="text/javascript"></script>
+<script src="js/function.js"></script>
+<script src="js/swiper-4.4.1.min.js"></script>
+<script>
+	window.onscroll = function () {
+		let nav = document.querySelector(".nav-box");
+		let nav_a = document.querySelectorAll(".navR li a");
+		let bodytop = document.body.scrollTop || document.documentElement.scrollTop;
+		if (bodytop != 0) {
+			nav.style.background = "#fff";
+			for (let i = 0; i < nav_a.length; i++) {
+				nav_a[i].style.color = "#2a333c";				
+			}
+			nav_a[0].style.color = "#16b0dc";
+		}else {
+			nav.style.background = "rgba(0, 0, 0, 0.15)";
+			for (let i = 0; i < nav_a.length; i++) {
+				nav_a[i].style.color = "#fff";
+			}
+			nav_a[0].style.color = "#16b0dc";	
+		}
+		
+		let ftop = document.querySelector(".button");	
+
+		if (bodytop > 700) {
+			ftop.style.bottom = "10px";
+			ftop.style.opacity = 1;
+		}
+		if (bodytop <= 700) {
+			ftop.style.bottom = "-36px";
+			ftop.style.opacity = 0;
+		}
+		
+		ftop.onclick = function () {
+			animate(document.body,{scrollTop:0});
+			animate(document.documentElement,{scrollTop:0});
+		}	
+	}
+</script>

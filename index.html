@@ -181,13 +181,32 @@
 	animation-duration: 1s;
 }
 .huayu-box li:nth-child(2) {
-	animation-delay: .3s;
+	animation-delay: .1s;
 	animation-duration: 1s;
 }
 .huayu-box li:nth-child(3) {
 	animation-delay: .3s;
 	animation-duration: 1s;
 }
+.huayu-box li:nth-child(4) {
+	animation-delay: .3s;
+	animation-duration: 1s;
+}
+.huayu-box li:nth-child(5) {
+	animation-delay: .5s;
+	animation-duration: 1s;
+}.huayu-box li:nth-child(6) {
+	animation-delay: .5s;
+	animation-duration: 1s;
+}
+.huayu-box li:nth-child(7) {
+	animation-delay: .7s;
+	animation-duration: 1s;
+}.huayu-box li:nth-child(8) {
+	animation-delay: .7s;
+	animation-duration: 1s;
+}
+
 </style>
 <body>
 <!-- 导航开始 -->
@@ -313,7 +332,7 @@
 						</p>
 					</div>
 				</li>
-				<li class="animated fadeInRight">
+				<li>
 					<a href="hyhy.html" class="img-box"><img srcimg="img/huayu-list1.jpg" src="img/0172dd57ac15350000012e7e32747e.gif" title="多肉入新家"></a>
 					<div class="text-body">
 						<a href="hyhy.html">多肉入新家</a>
@@ -548,6 +567,8 @@
 //按需加载
 	let settop = document.querySelectorAll(".settop");
 	let lis = document.querySelectorAll(".huayu-box li");
+	let work = document.querySelector(".work");
+
 	let arr = [];
 	settop.forEach((val,index) => {
 		arr.push(val.offsetTop);
@@ -575,10 +596,16 @@
 		arr.forEach((val,index) => {
 			//当滚动条的距离>每个楼层的offsettop时,让对应楼层的图片出现
 			if (bodytop >= val) {
-				console.log(index);
+
 				if (index == 1) {
 					lis[0].classList.add("animated","fadeInLeft"); 
 					lis[2].classList.add("animated","fadeInLeft");
+					lis[4].classList.add("animated","fadeInLeft");
+					lis[6].classList.add("animated","fadeInLeft");
+					lis[1].classList.add("animated","fadeInRight");
+					lis[3].classList.add("animated","fadeInRight");
+					lis[5].classList.add("animated","fadeInRight");
+					lis[7].classList.add("animated","fadeInRight");
 				}
 				
 				//获取每一楼层中对应的所有图片
@@ -588,14 +615,18 @@
 					//vals每一张图片
 					let url = vals.getAttribute("srcimg");	
 					vals.setAttribute("src",url);
-				})
-
+				})			
 			}
+			
 		})
+		if (bodytop >= work.offsetTop) {
 
+			work.classList.add("animated","fadeInUp");				
+		}
 
 //返顶	
-		let ftop = document.querySelector(".button");		
+		let ftop = document.querySelector(".button");	
+		console.log(bodytop);
 		if (bodytop > 700) {
 			ftop.style.bottom = "10px";
 			ftop.style.opacity = 1;
